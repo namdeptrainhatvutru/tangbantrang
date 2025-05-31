@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Một số trình duyệt yêu cầu người dùng tương tác trước khi phát nhạc
         document.addEventListener('click', playMusic);
-    }, 1000); // thời gian loading 3 giây (có thể điều chỉnh)
+    }, 3000); // thời gian loading 3 giây (có thể điều chỉnh)
 });
 
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const rect = element.getBoundingClientRect();
         const hearts = ['💖', '💕', '💗', '💓', '💝'];
 
-        for (let i = 0; i < 12; i++) {
+        for (let i = 0; i < 6; i++) {
             const heart = document.createElement('div');
             heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
             heart.style.position = 'fixed';
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create sparkle effect when text is clicked
     function createSparkleEffect(element) {
         const rect = element.getBoundingClientRect();
-        const sparkles = 8;
+        const sparkles = 4;
 
         for (let i = 0; i < sparkles; i++) {
             const sparkle = document.createElement('div');
@@ -324,14 +324,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Randomly change glow intensity
         setInterval(() => {
             messages.forEach(msg => {
-                if (Math.random() < 0.1) { // 10% chance
+                if (Math.random() < 0.05) { // 10% chance
                     msg.style.filter = 'brightness(1.5) saturate(1.2)';
                     setTimeout(() => {
                         msg.style.filter = '';
                     }, 500);
                 }
             });
-        }, 2000);
+        }, 3000);
     }
 
     // Add keyboard interactions
