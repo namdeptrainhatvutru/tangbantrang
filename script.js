@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Một số trình duyệt yêu cầu người dùng tương tác trước khi phát nhạc
         document.addEventListener('click', playMusic);
-    }, 3000); // thời gian loading 3 giây (có thể điều chỉnh)
+    }, 1000); // thời gian loading 3 giây (có thể điều chỉnh)
 });
 
 
