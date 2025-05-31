@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dải Ngân Hà 3D - Galaxy Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-container">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Những điều tốt đẹp đều cần thời gian...</p>
+            <p class="loading-subtext">Chúc trang 1/6 vui hơn bình thường</p>
+        </div>
+    </div>
+
+    <!-- Main Galaxy Viewer -->
+    <div id="galaxy-viewer" class="galaxy-container hidden">
+        <!-- Stars Background -->
+        <div class="stars" id="stars-container"></div>
+
+        <!-- Cosmic Background Effect -->
+        <div class="cosmic-bg"></div>
+        <!-- Vietnamese Messages -->
+        <div class="messages-container">
+            <div class="floating-text text-glow-pink">Chúc ăn mau chóng lớn</div>
+            <div class="floating-text text-glow-red">Chúc trang cao lên</div>
+            <div class="floating-text text-glow-purple">Trang xinh gái</div>
+            <div class="floating-text text-glow-pink">Chúc Trang không xấu</div>
+            <div class="floating-text text-glow-red">Chúc trang có nhiều tiền cho tớ vay</div>
+            <div class="floating-text text-glow-purple">Chanh 1/6 vui vẻ</div>
+            <div class="floating-text text-glow-pink">Chúc trang cao lên</div>
+            <div class="floating-text text-glow-red">Chúc ăn mau chóng lớn</div>
+            <div class="floating-text text-glow-purple">Trang xinh gái</div>
+            
+            <!-- Additional scattered messages -->
+            <div class="floating-text text-glow-red additional-msg fakebutton" style="top: 20%; right: 15%;">
+                Chúc trang cao lên
+                
+            </div>
+            <div class="floating-text text-glow-purple additional-msg" style="top: 45%; right: 25%;">
+                Chúc ăn mau chóng lớn
+            </div>
+            <div class="floating-text text-glow-pink additional-msg" style="top: 65%; left: 20%;">
+                Trang xinh gái
+            </div>
+            <div class="floating-text text-glow-red additional-msg" style="top: 35%; left: 60%;">
+                Chúc Trang không xấu
+                
+            </div>
+            <div class="floating-text text-glow-purple additional-msg" style="top: 75%; right: 10%;">
+                Chanh 1/6 vui vẻ
+            </div>
+            <div class="floating-text text-glow-purple additional-msg" style="top: 75%; right: 10%;">
+                Chanh 1/6 vui vẻ
+            </div>
+            
+        </div>
+        
+        <img style="position: absolute;z-index: 9; left: 70%; top: 20%;" src="./img/1.png" alt="Avatar Trang" class="avatar-image">
+        <img style="position: absolute;z-index: 9; left: 50%; top: 50%;" src="./img/2.png" alt="Avatar Trang" class="avatar-image">
+        <img style="position: absolute;z-index: 9; left: 28%; top: 80%;" src="./img/3.png" alt="Avatar Trang" class="avatar-image">
+        <img style="position: absolute;z-index: 9; left: 30%; top: 20%;" src="./img/4.png" alt="Avatar Trang" class="avatar-image">
+        <img style="position: absolute;z-index: 9; left: 80%; top: 80%;" src="./img/5.png" alt="Avatar Trang" class="avatar-image">
+        <!-- Images Section -->
+        <div class="images-container">
+            <!-- Center Avatar/Photo - Thay thế bằng ảnh của Trang -->
+            <div class="center-avatar">
+                <img src="./img/1.png" alt="Avatar Trang" class="avatar-image">
+                <div class="avatar-glow"></div>
+            </div>
+
+            <!-- Floating Images around - Có thể thêm ảnh kỷ niệm, sinh nhật... -->
+            <div class="floating-image" style="top: 15%; left: 20%;">
+                <img src="./img/2.png" alt="Birthday" class="small-image">
+            </div>
+
+            <div class="floating-image" style="top: 30%; right: 20%;">
+                <img src="./img/3.png" alt="Party" class="small-image">
+            </div>
+
+            <div class="floating-image" style="bottom: 30%; left: 15%;">
+                <img src="./img/4.png" alt="Heart" class="small-image">
+            </div>
+
+            <!-- Background decorative images -->
+            <div class="bg-decoration" style="top: 10%; right: 10%;">
+                <img src="./img/1.png" alt="Star" class="decoration-image">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-text">Chúc Trang 1/6 vui vẻ! 🎉</p>
+            <p style="font-size: 20px;" class="footer-text">Click bất kỳ để nghe lời muốn nói</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <audio id="bg-music" src="./music/YeuEmHonMoiNgay-Andiez-7136374.mp3" loop></audio>
+</body>
+</html>
